@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>HTML Reverse Engineering</title>
+    <style>
+body{
+background-color: rgb(136, 15, 29);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: white;
+margin-right: 40px;
+margin-left: 40px;
+}
+a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+      section { margin-top: 120px; }
+      #table-of-contents { margin: 80px 0; }
+      .grid-col-2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Core 2 Interaction: Lab – &nbsp;<em>HTML Reverse Engineering</em> </h1>
+    </header>
+
+    <section id="table-of-contents">
+      <ul>
+        <li><a href="#screenshot">Screenshot ↓</a></li>
+        <li><a href="#analysis">Analysis ↓</a></li>
+        <li><a href="#questions">Questions ↓</a></li>
+      </ul>
+    </section>
+
+    <section id="screenshot">
+      <h2>Screenshot</h2>
+
+    <!-- TODO: Add image tag with src attribute references your screenshot. -->
+
+    <img width=100% src ="1.jpg"> <br><br><br><br><br><br>
+    <img width=100% src ="2.jpg">
+    
+    </section>
+
+    <section id="analysis">
+      <h2>Analysis</h2>
+      <div class="grid-col-2">
+        <div>
+          <pre id="analysis--simplified-html">
+          <!-- TODO: Replace with your version of a simplified structure -->
+<pre>
+
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Story As Network Homepage&lt;/title&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./style.css"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+<body data-new-gr-c-s-check-loaded="14.1154.0" data-gr-ext-installed="">
+  <pre>
+    &lt;div class="container"&gt;
+        &lt;div class="box-a box1"&gt;T&lt;/div&gt;
+        &lt;div class="box-b box2"&gt;h&lt;/div&gt;
+        &lt;div class="box-a box3"&gt;e&lt;/div&gt;
+    &lt;/div&gt;
+            </pre>
+
+</pre>
+        </div>
+        <div id="analysis--text">
+          <!-- TODO: <p>Write a response!</p> -->
+          <ul>
+
+       <li><p> Each box that contains a letter has its class so that it could have it's on style as see on the site </p> </li> 
+        <li><p> The container in this case is putting all the boxes into one singkle style, to define typeface for instance. </p></li> 
+        <li> <p> This website is an intreractive way to read a text and its the Project 1 of a past student. This page is actually the homepage that lead to the text.</p> </li> 
+         <li> <p> As you can see below, if you play around with the class and container you can change the box around the words and create a differnt style for this home page</p> </li> 
+        
+        </ul>
+        </div>
+        </div>
+    
+    </section>
+    <section id="questions">
+      <h2>Questions</h2>
+      <ul>
+        <li>
+          <!-- TODO: Ask some questions! -->
+          What is the meaning of: "grammarly-desktop-integration data-grammarly-shadow-root="true"/grammarly-desktop-integration" line? </li>
+          <li> Isn't there a way to add all the letters to a Div to create a box around them? or even using padding?</li>
+          <li> What is the best and faster way to make these page responsive?</li>
+          <li> I'm confused about the flex: wrap. What does it actually mean?
+        </li>
+      </ul>
+    </section>
+<br><br><br><br><br><br><br>
+    <style>
+      .container{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 150px;
+        margin: 0px;
+        text-align: left;
+        width: 100%;
+        color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        top: 60px;
+        justify-content: center;
+        min-height: 50px;
+        word-spacing: 200px;}
+    
+      .box1 {
+        background-color: rgb(107, 12, 23);
+        padding: 1%;
+        color:rgb(255, 190, 11);
+      }
+      .box2 {
+        background-color: rgb(255, 190, 11);
+        color: rgb(107, 12, 23);
+        padding: 2%;
+      }
+      .box3 {
+        background-color: rgb(107, 12, 23);
+        color:rgb(255, 190, 11);
+        padding: 1%;
+      }
+    
+    </style>
+    
+    <div class="container">
+        <div class=" box-a box1">T</div>
+        <div class=" box-b box2">h</div>
+        <div class=" box-a box3">e</div>
+        <div class=" box-a box2">E</div>
+        <div class=" box-b box1">n</div>
+        <div class=" box-a box2">d</div>
+        <div class=" box-a box3">!</div>
+    </div>
+    
+     </div>
+    
+    </body>
+    </html>
+
+  </body>
+	
+</html>

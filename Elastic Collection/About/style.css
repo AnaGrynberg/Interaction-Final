@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Ojuju:wght@200..800&display=swap');
+
+body{
+    background-color:rgb(227, 237, 234);
+    margin: 0;
+    margin-top: 0;
+}
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family: "Ojuju", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size:50px;
+  text-align:center;
+  height:380px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:#0122ff;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+#backgroundContainer {
+    position: fixed;
+    z-index: -1;
+    
+}
+
+#backgroundImage {
+    width: 100vw;
+    height: 100vh;
+}
+
+#foregroundContainer {
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+}
+
+.navbar {
+ 
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .nav-btn {
+    color: #0122ff;
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 30px;
+    margin: 0 10px;
+   
+    transition: background-color 0.3s;
+  }
+  
+  .nav-btn:hover {
+    filter: drop-shadow(0 0 0.75rem #F73615);
+    color:#F73615;
+  }
+  
+  .home-btn {
+    margin: 0;}
+  
+  
+  
+  

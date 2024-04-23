@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@100;500&family=Bricolage+Grotesque:opsz,wght@12..96,600&family=Shantell+Sans&display=swap');
+
+body {
+    background-color: rgba(255, 115, 123, 1);
+}
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 120vh;
+    width: 52%;
+    padding: 45px 0 0 20px;
+    margin-top: 50px;
+    color:rgba(244, 237, 227, 1);
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    word-spacing: 0.1px;
+    line-height: 25px;
+}
+
+.container p {
+    margin-bottom: -3px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor:pointer;
+    font-size: 10px;
+    margin-right: 10px;
+    color:  rgba(244, 237, 227, 1);
+    padding: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+.button1 {
+    background-color: transparent;
+    border: rgba(255, 115, 123, 1);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    color:  rgba(244, 237, 227, 1);
+    padding: 10px 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0.5px 0.5px 6px 6px rgba(0, 0, 0, 0.1); 
+    font-family:'Shantell Sans', cursive;
+    
+}
+
+.end-word{
+    color:rgb(198, 9, 188);
+}
+.button2 {
+    background-color: transparent;
+    border: rgba(255, 115, 123, 1);
+    border-radius: 20px;
+    cursor: progress;
+    font-size: 16px;
+    margin-right: 20px;
+    color:  rgba(244, 237, 227, 1);
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0.5px 0.5px 6px 6px rgba(0, 0, 0, 0.1); 
+    font-family:'Shantell Sans', cursive;
+}
+
+.button3 {
+    background-color: transparent;
+    border: rgba(255, 115, 123, 1);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    color:  rgba(244, 237, 227, 1);
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0.5px 0.5px 6px 6px rgba(0, 0, 0, 0.1); 
+    font-family:'Shantell Sans', cursive;
+}
+
+.highlighted {
+    background-color: #1fd61c;
+}
+
+.button4 {
+    background-color: transparent;
+    border: rgba(255, 115, 123, 1);
+    border-radius: 20px;
+    cursor: zoom-in;
+    font-size: 16px;
+    margin-right: 20px;
+    color:  rgba(244, 237, 227, 1);
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0.5px 0.5px 6px 6px rgba(0, 0, 0, 0.1); 
+    font-family:'Shantell Sans', cursive;
+}
+
+.button5 {
+    background-color: transparent;
+    border: rgba(255, 115, 123, 1);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    color:  rgba(244, 237, 227, 1);
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0.5px 0.5px 6px 6px rgba(0, 0, 0, 0.1); 
+    font-family:'Shantell Sans', cursive;
+}
+
+.beginning-word{
+    text-decoration:dotted, blue;
+}
+
+.button6 {
+    background-color: transparent;
+    border: rgba(255, 115, 123, 1);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    color:  rgba(244, 237, 227, 1);
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0.5px 0.5px 6px 6px rgba(0, 0, 0, 0.1); 
+    font-family:'Shantell Sans', cursive;
+}
+
+.button1:hover {
+    background-color: rgb(255, 5, 242);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.button2:hover {
+    background-color: rgb(151, 5, 255);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+}
+
+.button3:hover {
+    background-color: #1fd61c;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button4:hover {
+    background-color: rgb(233, 7, 7);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+}
+
+.button5:hover {
+    background-color: rgb(5, 176, 255);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button6:hover {
+    background-color: rgb(249, 147, 30);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#better-button {
+    background-color: transparent;
+    border: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color:  rgba(244, 237, 227, 1);
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0.5px 0.5px 6px 6px rgba(0, 0, 0, 0.1); 
+    font-family:'Shantell Sans', cursive;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#better-button:hover {
+    background-color: rgba(160, 115, 255, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+#better-button.clicked {
+    animation: scaleButton 0.5s ease forwards;
+}
+
+@keyframes scaleButton {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}

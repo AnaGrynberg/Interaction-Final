@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+.container {
+    position: relative;
+  }
+
+.text1{
+  position: absolute;
+  bottom: 190px;
+  left: 548px;
+  opacity: 0;
+  transition: 0.5s ease;}
+
+.text1:hover{
+  opacity: 1;
+}
+
+.text2{
+    position: absolute;
+    bottom: 305px;
+    left: 900px;
+    opacity: 0;
+    transition: 0.5s ease;}
+  
+.text2:hover{
+    opacity: 1;
+  }
+
+.text3{
+    position: absolute;
+    bottom: 194px;
+    left: 910px;
+    opacity: 0;
+    transition: 0.5s ease;}
+  
+.text3:hover{
+    opacity: 1;
+  }
+
+.text4{
+    position: absolute;
+    bottom: 290px;
+    left: 570px;
+    opacity: 0;
+    transition: 0.5s ease;}
+  
+.text4:hover{
+    opacity: 1;
+  }
+
+.text5{
+    position: absolute;
+    bottom: 190px;
+    left: 10px;
+    opacity: 0;
+    transition: 0.5s ease;}
+  
+.text5:hover{
+    opacity: 1;
+  }
+
+.text6{
+    position: absolute;
+    bottom: 510px;
+    left: 39px;
+    opacity: 1;}
+  
+.text6:hover{
+    transform: scale(110%);
+  }
+
+
+.text1 {
+    background-color: rgb(108, 219, 236);
+	font-family:'Work Sans', sans-serif;
+	font-size: 13px;
+	text-align: left;
+	box-sizing:border-box;
+	padding: 1%;
+	width:23%;
+	margin: 10px;
+	border: lightgoldenyellow groove 5px;
+	border-radius:5px;
+	border-bottom-left-radius: 55px;
+	border-top-right-radius: 55px;
+	border-top-left-radius: 55px;
+	display: inline-block;
+}
+
+.text2 {
+	background-color: rgb(204, 204, 255);
+	font-family:'Work Sans', sans-serif;
+	font-size: 13px;
+	text-align: left;
+	box-sizing:border-box;
+	padding: 1%;
+	width:20%;
+	margin: 10px;
+	border: lightgoldenyellow groove 5px;
+	border-radius:5px;
+	border-bottom-left-radius: 55px;
+	border-top-right-radius: 55px;
+	border-top-left-radius: 55px;
+	display: inline-block;
+}
+
+.text3 {
+	background-color: rgb(152, 231, 40);
+	font-family:'Work Sans', sans-serif;
+	font-size: 13px;
+	text-align: left;
+	box-sizing:border-box;
+	padding: 1%;
+	width:20%;
+	margin: 10px;
+	border: lightgoldenyellow groove 5px;
+	border-radius:5px;
+	border-bottom-left-radius: 55px;
+	border-top-right-radius: 55px;
+	border-top-left-radius: 55px;
+	display: inline-block;
+}
+
+.text4 {
+	background-color: rgb(108, 219, 236);
+	font-family:'Work Sans', sans-serif;
+	font-size: 13px;
+	text-align: left;
+	box-sizing:border-box;
+	padding: 1%;
+	width:21%;
+	margin: 10px;
+	border: lightgoldenyellow groove 5px;
+	border-radius:5px;
+	border-bottom-left-radius: 55px;
+	border-top-right-radius: 55px;
+	border-top-left-radius: 55px;
+	display: inline-block;
+}
+
+.text5 {
+	background-color: rgb(108, 219, 236);
+	font-family:'Work Sans', sans-serif;
+	font-size: 13px;
+	text-align: left;
+	box-sizing:border-box;
+	padding: 1%;
+	width:17%;
+	margin: 10px;
+	border: lightgoldenyellow groove 5px;
+	border-radius:5px;
+	border-bottom-left-radius: 55px;
+	border-top-right-radius: 55px;
+	border-top-left-radius: 55px;
+	display: inline-block;
+}
+
+.text6 {
+	background-color: rgb(240, 202, 88);
+	font-family:'Work Sans', sans-serif;
+	font-size: 17px;
+	text-align: left;
+	box-sizing:border-box;
+	padding: 1%;
+	width:20%;
+	margin: 10px;
+	border: lightgoldenyellow groove 5px;
+	border-radius:5px;
+	border-bottom-left-radius: 55px;
+	border-top-right-radius: 55px;
+	border-top-left-radius: 55px;
+	display: inline-block;
+}

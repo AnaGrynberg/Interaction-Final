@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+body {
+  background-image: url('2.png'); 
+  background-position: top; 
+  background-size: 110%;
+  background-repeat: no-repeat; 
+  background-attachment:scroll; }
+
+.container {
+  max-width: 1200px;
+  margin-top: 980px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+
+button {
+  margin: 5px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  background-color: #ee64be; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.3s;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+button:hover {
+  background-color: #f413f0; 
+  transform: translateY(-2px);
+}
+
+
+#calendar {
+  border-collapse: separate; 
+  border-spacing: 30px; 
+  margin-left: 6px;
+  width: 100%;
+  margin-top: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#calendar td {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px; 
+  background-color: #a36648; 
+  color: white; 
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#calendar td::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  background-image: url('texture.jpg'); 
+  background-size: cover;
+  border-radius: 10px; 
+  z-index: -1; 
+}
+
+#calendar td.highlighted {
+  background-color: #30c52b; 
+}
+
+#calendar td.highlighted::before {
+  border-color: #ffab00; 
+}
+
+#calendar td:hover {
+  background-color: #693e13; 
+}
+
+.navbar {
+ 
+  overflow: hidden;
+  position:static;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.nav-btn {
+  color: #f68fa5;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 30px;
+  margin: 0 10px;
+ 
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  filter: drop-shadow(0 0 0.75rem #f6eef0);
+  color:#e74467;
+}
+
+.home-btn {
+  margin: 0;}
+
+
+
+@media (max-width: 600px) {
+  .slider {
+      display: block;
+  }
+
+  button {
+      width: 100%;
+      margin: 5px 0;
+  }
+}

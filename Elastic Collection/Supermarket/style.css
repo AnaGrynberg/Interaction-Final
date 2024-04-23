@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Ojuju:wght@200..800&display=swap');
+
+body {
+    background-color: red;
+}
+
+.title {
+  font-weight: 700;
+  font-style: normal;
+  color:#0122ff;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 100%;
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 70px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-top: 130px;
+  }
+}
+  
+  .card {
+    position: relative;
+    background-color: #FFF0E0;
+    margin: 20px;
+    width: 250px;
+    height: 350px; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card .description {
+    display: none;
+    
+  }  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:  #1879b9a3;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #FFF0E0;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    cursor: context-menu;
+    
+  }
+
+  @media (max-width: 600px) {
+    .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    transform: translateY(0%);
+    background-color: #FFF0E0;
+    transition: transform 0.5s ease;
+    cursor: context-menu;
+    margin-top: 2vw;
+    }
+  }
+  
+  .card:hover .content {
+    transform: translateY(0);
+  }
+  
+  .content h2 {
+    margin-top: 0;
+  }
+  
+  .content p {
+    margin-bottom: 10px;
+  }
+  
+  .buy-btn {
+    background-color: #0122ff;
+    color: white;
+    border: 10px, #0122ff;
+    top:20px;
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .buy-btn:hover {
+    background-color: #F73615;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #FFF0E0;
+    margin: 5% auto;
+    padding: 25px;
+    border: 5px solid #F73615;
+    border-radius: 50px 50px 50px 50px;
+    width: 50%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .close {
+    color: #F73615;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+.navbar {
+ 
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .nav-btn {
+    color: #FFF0E0;
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.1vw; 
+    text-decoration: none;
+    padding: 2vw; 
+    margin: 0 1vw;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-btn:hover {
+    filter: drop-shadow(0 0 1rem #030cff);
+    color: #0122ff;
+  }
+  
+  @media (max-width: 600px) {
+    .nav-btn {
+      font-size: 4vw; 
+      padding: 3vw 3vw;
+      margin: 0 2vw;
+      text-align: center;
+      text-wrap: balance;
+    }
+  }
+  
+  .home-btn {
+    margin: 0;}
+  
+  
+    .avocado {
+      width: 200px;
+      height: auto;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+  
+    .apple {
+      width: 250px;
+      height: auto;
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+    
+    .beats {
+      width: 200px;
+      height: auto;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+    
+    .brussels-sprouts {
+      width: 200px;
+      height: auto;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+    
+    .cabbage {
+      width: 230px;
+      height: auto;
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+    
+    .carrot {
+      width: 200px;
+      height: auto;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+    
+    .cauliflower-rice {
+      width: 230px;
+      height: auto;
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+    
+    .chicken {
+      width: 250px;
+      height: auto;
+      margin-left: 0px;
+      margin-top: 15px;
+    }
+    
+    .cottage-cheese {
+      width: 200px;
+      height: auto;
+      margin-left: 23px;
+      margin-top: 15px;
+    }
+    
+    .cucumbers {
+      width: 400px;
+      height: auto;
+      margin-left: -70px;
+      margin-top: 15px;
+    }
+    
+    .egg {
+      width: 200px;
+      height: auto;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+    
+    .eggplant {
+      width: 150px;
+      height: auto;
+      margin-left: 50px;
+      margin-top: 15px;
+    }
+    
+    .goat-cheese {
+      width: 200px;
+      height: auto;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+    
+    .mustard {
+      width: 100px;
+      height: auto;
+      margin-left: 70px;
+      margin-top: 15px;
+    }
+    
+    .onion {
+      width: 150px;
+      height: auto;
+      margin-left: 50px;
+      margin-top: 15px;
+    }
+    
+    .salad {
+      width: 180px;
+      height: auto;
+      margin-left: 40px;
+      margin-top: 15px;
+    }
+    
+    .salmon {
+      width: 200px;
+      height: auto;
+      margin-left: 30px;
+      margin-top: 15px;
+    }
+    
+    .shitake-mushroom {
+      width: 250px;
+      height: auto;
+      margin-left: 0px;
+      margin-top: 15px;
+    }
+    
+    .squash {
+      width: 280px;
+      height: auto;
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+    
+    .sweet-potato {
+      width: 200px;
+      height: auto;
+      margin-left: 22px;
+      margin-top: 15px;
+    }
+    
+    .tangerine {
+      width: 200px;
+      height: auto;
+      margin-left: 10px;
+      margin-top: 25px;
+    }
+    
+    .tofu {
+      width: 200px;
+      height: auto;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+    
+    .tomato-sauce {
+      width: 150px;
+      height: auto;
+      margin-left: 50px;
+      margin-top: 15px;
+    }
+    
+    .tomato {
+      width: 200px;
+      height: auto;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+    
+    .yogurt {
+      width: 200px;
+      height: auto;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+    
+    

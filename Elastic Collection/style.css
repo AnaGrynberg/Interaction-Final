@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Ojuju:wght@200..800&display=swap');
+
+body{
+    background-color:rgb(227, 237, 234);
+    margin: 0;
+}
+#backgroundContainer {
+    position: fixed;
+    z-index: -1;
+    
+}
+
+#backgroundImage {
+    width: 100vw;
+    height: 100vh;
+}
+
+#foregroundContainer {
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+}
+
+#b1 {
+    left: 10vw;
+    top: 83vh;
+    cursor: grab;
+    width: 20vh;
+}
+
+#b2 {
+    left: 39vw;
+    top: 80vh;
+    cursor: grab;
+    width: 15vh;
+}
+
+#b3 {
+    left: 68.5vw;
+    top: 60vh;
+    cursor: grab;
+    width: 27vh;
+}
+
+#b4 {
+    left: 84vw;
+    top: 23vh;
+    cursor: grab;
+    width: 27vh;
+}
+
+#b5 {
+    left: 60vw;
+    top: 73vh;
+    cursor: grab;
+    width: 27vh;
+}
+
+#b6 {
+    left: 69vw;
+    top: 31vh;
+    cursor: grab;
+    width: 27vh;   
+}
+
+#b7 {
+    left: 82vw;
+    top: 33vh;
+    cursor: grab;
+    width: 27vh;
+}
+
+#b8 {
+    left: 30vw;
+    top: 28vh;
+    cursor: grab;
+    width: 36vh;
+}
+
+#b9 {
+    left: 50vw;
+    top: 38vh;
+    cursor: grab;
+    width: 20vh;
+}
+
+#b10 {
+    left: 24vw;
+    top: 79vh;
+    cursor: grab;
+    width: 36vh;
+}
+
+#b11 {
+    left: 36vw;
+    top: 47vh;
+    cursor: grab;
+    width: 32vh;
+}
+
+#b12 {
+    left: 55vw;
+    top: 69vh;
+    cursor: grab;
+    width: 19vh;
+}
+
+#b13 {
+    left: 12vw;
+    top: 40vh;
+    cursor: grab;
+    width: 22vh;
+}
+
+#b14 {
+    left: 62vw;
+    top: 33vh;
+    cursor: grab;
+    width: 10vh;
+}
+
+#b15 {
+    left: 82vw;
+    top: 85vh;
+    cursor: grab;
+    width: 12vh;
+}
+
+#b16 {
+    left: 68vw;
+    top: 30vh;
+    cursor: grab;
+    width: 23vh;
+}
+
+#b17 {
+    left: 23vw;
+    top: 38vh;
+    cursor: grab;
+    width: 23vh;
+}
+
+#b18 {
+    left: 18vw;
+    top: 41vh;
+    cursor: grab;
+    width: 27vh;
+}
+
+#b19 {
+    left: 84vw;
+    top: 70vh;
+    cursor: grab;
+    width: 32vh;
+}
+
+#b20 {
+    left: 19vw;
+    top: 83vh;
+    cursor: grab;
+    width: 18vh;
+}
+
+#b21 {
+    left: 34vw;
+    top: 87vh;
+    cursor: grab;
+    width: 14vh;
+}
+
+#b22 {
+    left: 5vw;
+    top: 40vh;
+    cursor: grab;
+    width: 20vh;
+}
+
+#b23 {
+    left: 55vw;
+    top: 27vh;
+    cursor: grab;
+    width: 18vh;
+}
+
+#b24 {
+    left: 2vw;
+    top: 80vh;
+    cursor: grab;
+    width: 20vh;
+}
+
+#b25 {
+    left: 1vw;
+    top: 45vh;
+    cursor: grab;
+    width: 14vh;
+}
+
+
+.dragImage {
+    position: fixed;
+    width: 10vw;
+    height: auto;
+    cursor: grab;
+}
+
+.navbar {
+ 
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.nav-btn {
+  color: #0122ff;
+  font-family: "Ojuju", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 30px;
+  margin: 0 10px;
+ 
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  filter: drop-shadow(0 0 0.75rem #F73615);
+  color:#F73615;
+}
+
+.home-btn {
+  margin: 0;}
+
+
+

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Ojuju:wght@200..800&display=swap');
+
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  display: flex;
+  height: 100dvh;
+  perspective: 1000px;
+  font-size: 12px;
+  color: #0122ff;
+  font-family: "Ojuju", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  overflow: hidden;
+  background-color: #e4f0be;
+}
+
+.book {
+  display: flex;
+  margin: auto;
+  width: 300px;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  transition: translate 1s;
+  translate: calc(min(var(--c), 1) * 50%) 0%;
+  rotate: 1 0 0 30deg;
+  cursor: e-resize;
+}
+
+.page {
+  --thickness: 7;
+  flex: none;
+  display: flex;
+  width: 150%;
+  height: 30vw;
+  pointer-events: all;
+  user-select: none;
+  transform-style: preserve-3d;
+  border: 1px solid #0008;
+  transform-origin: left center;
+  transition:
+    transform 1s,
+    rotate 1s ease-in calc((min(var(--i), var(--c)) - max(var(--i), var(--c))) * 50ms);
+  translate: calc(var(--i) * -100%) 0px 0px;
+  transform: translateZ( calc((var(--c) - var(--i) - 0.5) * calc(var(--thickness) * 1px)));
+  rotate: 0 1 0 calc(clamp(0, var(--c) - var(--i), 1) * -180deg);
+}
+
+.page img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.front,
+.back {
+  flex: none;
+  width: 100%;
+  padding: 2rem;
+  backface-visibility: hidden;
+  background-color: #FFF0E0;
+  translate: 0px;
+}
+
+.back {
+  background-image: linear-gradient(to right, #FFF0E0 80%, #e5d6c6 100%);
+  translate: -100% 0;
+  rotate: 0 1 0 180deg;
+}
+
+.navbar {
+ 
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.nav-btn {
+  color: #F73615;
+  font-family: "Ojuju", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 30px;
+  margin: 0 10px;
+ 
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  filter: drop-shadow(0 0 0.75rem #D79E35);
+  color:#D79E35;
+}
+
+.home-btn {
+  margin: 0;}
+

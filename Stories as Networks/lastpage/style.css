@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@100;500&family=Bricolage+Grotesque:opsz,wght@12..96,600&family=Shantell+Sans&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(244, 237, 227, 1);
+  }
+  .line {
+    width: 100vw;
+  }
+  .left, .right {
+    width: 50vw;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .left {
+    color:rgba(229, 210, 182, 1);
+    transform: skew(0deg, -15deg);
+  }
+  .right {
+    color: rgba(227, 115, 255, 1);
+    transform: skew(0deg, 15deg);
+  }
+  .left .content {
+    width: 100vw;
+    text-align: center;
+  }
+  .right .content {
+    width: 100vw;
+    text-align: center;
+    transform: translate(-50vw);
+  }
+  span {
+    display: inline-block;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 10vw;
+    line-height: .8;
+    transition: ease-out .6s;
+  }
+
+  .arrow-link {
+    display: inline;
+    position: fixed;
+    left:50px;
+    font-size: 100px;
+    color:rgba(229, 210, 182, 1);
+    text-decoration: none;
+    transition: color 0.3s ease; 
+
+}
+
+.arrow-link:hover {
+    color:  rgba(227, 115, 255, 1);
+}
+
+.arrow-link2 {
+  display: inline;
+  position: fixed;
+  right:50px;
+  font-size: 100px;
+  color:rgba(227, 115, 255, 1);
+  text-decoration: none;
+  transition: color 0.3s ease; 
+
+}
+
+.arrow-link2:hover {
+  color:rgba(229, 210, 182, 1);
+}
