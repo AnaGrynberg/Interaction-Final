@@ -96,29 +96,43 @@ window.onload = function() {
         });
     }
 
-    // Generates the month buttons and attaches event listeners
-    function generateMonths() {
-        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-        months.forEach((month, index) => {
-            let button = document.createElement('button');
-            button.textContent = month;
-            button.className = 'month-button';
-            button.addEventListener('click', () => highlightMonth(index));
-            monthsSlider.appendChild(button);
+// Generates the month buttons and attaches event listeners
+function generateMonths() {
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    months.forEach((month, index) => {
+        let button = document.createElement('button');
+        button.textContent = month;
+        button.className = 'month-button';
+        button.addEventListener('click', function() {
+            this.classList.toggle('active');
+            if (this.classList.contains('active')) {
+                highlightMonth(index);
+            } else {
+                clearHighlights();
+            }
         });
-    }
+        monthsSlider.appendChild(button);
+    });
+}
 
-    // Generates the day buttons and attaches event listeners
-    function generateDays() {
-        const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-        days.forEach((day, index) => {
-            let button = document.createElement('button');
-            button.textContent = day;
-            button.className = 'day-button';
-            button.addEventListener('click', () => highlightDay(index));
-            daysSlider.appendChild(button);
+// Generates the day buttons and attaches event listeners
+function generateDays() {
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    days.forEach((day, index) => {
+        let button = document.createElement('button');
+        button.textContent = day;
+        button.className = 'day-button';
+        button.addEventListener('click', function() {
+            this.classList.toggle('active');
+            if (this.classList.contains('active')) {
+                highlightDay(index);
+            } else {
+                clearHighlights();
+            }
         });
-    }
+        daysSlider.appendChild(button);
+    });
+}
 
     // Generates the calendar grid
     function generateCalendar() {
@@ -144,3 +158,16 @@ window.onload = function() {
 
     initialize();
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Event listener for the 'Find Market' link
+    document.getElementById('find-market-link').addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent the default anchor behavior
+  
+      // Get the position of the buttons section
+      const buttonsSection = document.getElementById('find-market');
+      
+      // Scroll to the buttons section
+      buttonsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
