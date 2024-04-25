@@ -25,7 +25,7 @@
   }
   
   .nav-btn:hover {
-    filter: drop-shadow(0 0 0.75rem #f6eef0);
+    filter: drop-shadow(0 0 0.75rem #de6a87);
     color:#e74467;
   }
   
@@ -133,10 +133,10 @@ a { text-decoration: none; color: black;
     width: 350px;
   }
   .card .front-view img{
-    width: 17px;
+    width: 60px;
   }
   .card .back-view img{
-    max-width: 40px;
+    max-width: 80px;
   }
 }
 
@@ -146,9 +146,30 @@ a { text-decoration: none; color: black;
     width: 300px;
   }
   .card .front-view img{
-    width: 15px;
+    width: 55px;
   }
   .card .back-view img{
-    max-width: 35px;
+    max-width: 55px;
   }
+  .memorygame{
+    margin-left: 0px;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+  .text{
+    color: #e74467;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: auto;
+    }
+    .navbar {
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+
 }
+

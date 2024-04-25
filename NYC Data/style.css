@@ -44,9 +44,9 @@ button {
 
 
 button.active {
-  background-color: #4CAF50; 
+  background-color: #a80a63; 
   color: white; 
-  border-color: #367a38; 
+  border-color: #88026d; 
 }
 
 
@@ -94,7 +94,7 @@ button:hover {
 }
 
 #calendar td.highlighted {
-  background-color: #30c52b; 
+  background-color: #fe62dd; 
 }
 
 #calendar td.highlighted::before {
