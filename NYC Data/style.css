@@ -162,23 +162,37 @@ button:hover {
   .market-item {
     width: 50%; /* Example: 2 items per row instead of 3 or 4 */
   }
-  
+  .main-content {
+    padding: 20px;
+    min-width: 200px; /* Example of a max-width to ensure content doesn't stretch too far on large screens */
+    margin: auto;
+  }
 }
 
 /* Mobile devices */
 @media (max-width: 767px) {
   .navbar {
-    flex-direction: column; /* Stack nav items vertically */
-    padding: 100px;
+    flex-direction: row; 
+    width: 109%;
+    justify-content: flex-start; 
+  
   }
   .navbar a {
-    width: 100%; /* Full width nav items for easier clicking */
-    margin-bottom: 5px; /* Add some space between stacked items */
+    font-size: 10px;
+    margin-top: -5px;
   }
-  .market-item {
-    width: 100%; /* Each market item takes full width */
+  .container {
+    width: 100%; 
+    margin-top: 180px;
+    padding:10px;
+    font-size: 10px;
   }
-  /* Reduce font-sizes if needed for mobile readability */
+  .button {
+      margin: 5px;
+      margin-bottom: 0px;
+      padding: 0px 5px;
+      display: inline-block;
+      font-size: 6px;
+    }
   
 }
-

@@ -99,7 +99,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     min-height: 100vh; /* Minimum height to spread items vertically */
 }
 
@@ -154,3 +154,30 @@ ul li a:hover {
     transform: scale(1.1) rotate(0deg); 
 }
 
+@media screen and (max-width: 530px) {
+
+        .navbar {
+          flex-direction: row; 
+          width: 109%;
+          justify-content: flex-start; 
+        
+        }
+        .navbar a {
+          font-size: 10px;
+          margin-top: -5px;
+          margin-left:0px;
+        }
+        .text{
+          margin-left:50px;
+          font-size: 20px;
+          margin-bottom: 20px;
+          }
+        .ul {
+            padding: 60px;
+            margin-left:20px;
+            
+  }
+}
+  
+  
+  
