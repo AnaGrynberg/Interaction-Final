@@ -137,34 +137,18 @@ button:hover {
 .home-btn {
   margin: 0;}
 
-/* Media queries */
-
-/* Larger screens (e.g., desktops) */
-@media (min-width: 1025px) {
-  /* You might want to increase padding, margin, or font sizes for larger displays, or adjust the layout. */
-  .navbar {
-    padding: 20px 40px;
-  }
-  .main-content {
-    padding: 20px;
-    max-width: 1200px; /* Example of a max-width to ensure content doesn't stretch too far on large screens */
-    margin: auto;
-  }
-  
-}
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Adjust layout for smaller screens, perhaps switch to a single column layout or adjust padding/margins. */
   .navbar {
     padding: 15px 30px;
   }
   .market-item {
-    width: 50%; /* Example: 2 items per row instead of 3 or 4 */
+    width: 50%; 
   }
   .main-content {
     padding: 20px;
-    min-width: 200px; /* Example of a max-width to ensure content doesn't stretch too far on large screens */
+    min-width: 200px; 
     margin: auto;
   }
 }
@@ -182,17 +166,33 @@ button:hover {
     margin-top: -5px;
   }
   .container {
+    margin-top: 180px; 
     width: 100%; 
-    margin-top: 180px;
-    padding:10px;
-    font-size: 10px;
+    padding: 10px;
   }
-  .button {
-      margin: 5px;
-      margin-bottom: 0px;
-      padding: 0px 5px;
-      display: inline-block;
-      font-size: 6px;
-    }
+  button {
+    margin: 5px;
+    width: 10%;
+    padding: 2px 10px; 
+    font-size: 8px; 
+  }
+  #calendar {
+    width: 50%; 
+    border-spacing: 10px; 
+  }
+
+  #calendar td {
+    padding: 5px; 
+    font-size: 5px; 
+    left: 7px;
+  }
+
+  #calendar td::before {
+    top: -5px; 
+    right: -5px;
+    bottom: -5px;
+    left: -7px;
+  }
+
   
 }
