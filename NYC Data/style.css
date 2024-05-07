@@ -117,11 +117,52 @@ button:hover {
   
 }
 
+.nav-btn1, .nav-btn2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f1e6e8;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 70px;
+ 
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  filter: drop-shadow(0 0 0.75rem #f6eef0);
+  color:#e74467;
+}
+
+.nav-btn1:hover {
+  filter: drop-shadow(0 0 0.75rem #f6eef0);
+  color:#e74467;
+}
+
+.nav-btn2:hover{
+  filter: drop-shadow(0 0 0.75rem #f6eef0);
+  color:#e74467;
+}
+
+.nav-btn {
+  text-align: center; 
+}
+
+@media (max-width: 767px) {
+  .nav-btn1, .nav-btn2 {
+    flex-direction: column;
+  }
+}
+
 .nav-btn {
   color: #f68fa5;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: normal;
-  font-size: 30px;
+  font-size: 35px;
   text-decoration: none;
   padding: 10px;
   margin: 0 10px;
